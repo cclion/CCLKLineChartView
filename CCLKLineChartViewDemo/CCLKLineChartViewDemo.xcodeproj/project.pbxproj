@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFFE646A1DC1D626007673D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64691DC1D626007673D8 /* main.m */; };
+		DFFE646D1DC1D626007673D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE646C1DC1D626007673D8 /* AppDelegate.m */; };
+		DFFE64701DC1D626007673D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE646F1DC1D626007673D8 /* ViewController.m */; };
+		DFFE64731DC1D626007673D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFE64711DC1D626007673D8 /* Main.storyboard */; };
+		DFFE64751DC1D626007673D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFE64741DC1D626007673D8 /* Assets.xcassets */; };
+		DFFE64781DC1D626007673D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFE64761DC1D626007673D8 /* LaunchScreen.storyboard */; };
+		DFFE64831DC1D627007673D8 /* CCLKLineChartViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64821DC1D627007673D8 /* CCLKLineChartViewDemoTests.m */; };
+		DFFE648E1DC1D627007673D8 /* CCLKLineChartViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE648D1DC1D627007673D8 /* CCLKLineChartViewDemoUITests.m */; };
+		DFFE64FB1DC1E822007673D8 /* CCLKLineAboveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64EE1DC1E822007673D8 /* CCLKLineAboveCell.m */; };
+		DFFE64FC1DC1E822007673D8 /* CCLKLineAboveView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64F01DC1E822007673D8 /* CCLKLineAboveView.m */; };
+		DFFE64FD1DC1E822007673D8 /* CCLKLineBelowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64F21DC1E822007673D8 /* CCLKLineBelowCell.m */; };
+		DFFE64FE1DC1E822007673D8 /* CCLKLineBelowView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64F41DC1E822007673D8 /* CCLKLineBelowView.m */; };
+		DFFE64FF1DC1E822007673D8 /* CCLKLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64F61DC1E822007673D8 /* CCLKLineChartView.m */; };
+		DFFE65001DC1E822007673D8 /* CCLKLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64F81DC1E822007673D8 /* CCLKLineData.m */; };
+		DFFE65011DC1E822007673D8 /* CCLKLineShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE64FA1DC1E822007673D8 /* CCLKLineShareData.m */; };
+		DFFE650D1DC1E8AA007673D8 /* CCLTimeAboveView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65041DC1E8AA007673D8 /* CCLTimeAboveView.m */; };
+		DFFE650E1DC1E8AA007673D8 /* CCLTimeBelowView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65061DC1E8AA007673D8 /* CCLTimeBelowView.m */; };
+		DFFE650F1DC1E8AA007673D8 /* CCLTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65081DC1E8AA007673D8 /* CCLTimeModel.m */; };
+		DFFE65101DC1E8AA007673D8 /* CCLTimeShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE650A1DC1E8AA007673D8 /* CCLTimeShareData.m */; };
+		DFFE65111DC1E8AA007673D8 /* CCLTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE650C1DC1E8AA007673D8 /* CCLTimeView.m */; };
+		DFFE65151DC1E8AF007673D8 /* CCLFrameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65141DC1E8AF007673D8 /* CCLFrameTool.m */; };
+		DFFE65191DC1E939007673D8 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFFE65161DC1E939007673D8 /* data.plist */; };
+		DFFE651A1DC1E939007673D8 /* stockData.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFFE65171DC1E939007673D8 /* stockData.plist */; };
+		DFFE651B1DC1E939007673D8 /* timeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFFE65181DC1E939007673D8 /* timeData.plist */; };
+		DFFE655B1DC1E9B1007673D8 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65481DC1E9B1007673D8 /* MJExtensionConst.m */; };
+		DFFE655C1DC1E9B1007673D8 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE654A1DC1E9B1007673D8 /* MJFoundation.m */; };
+		DFFE655D1DC1E9B1007673D8 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE654C1DC1E9B1007673D8 /* MJProperty.m */; };
+		DFFE655E1DC1E9B1007673D8 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE654E1DC1E9B1007673D8 /* MJPropertyKey.m */; };
+		DFFE655F1DC1E9B1007673D8 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65501DC1E9B1007673D8 /* MJPropertyType.m */; };
+		DFFE65601DC1E9B1007673D8 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65521DC1E9B1007673D8 /* NSObject+MJClass.m */; };
+		DFFE65611DC1E9B1007673D8 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65541DC1E9B1007673D8 /* NSObject+MJCoding.m */; };
+		DFFE65621DC1E9B1007673D8 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65561DC1E9B1007673D8 /* NSObject+MJKeyValue.m */; };
+		DFFE65631DC1E9B1007673D8 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE65581DC1E9B1007673D8 /* NSObject+MJProperty.m */; };
+		DFFE65641DC1E9B1007673D8 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE655A1DC1E9B1007673D8 /* NSString+MJExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFFE647F1DC1D627007673D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFFE645D1DC1D626007673D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFFE64641DC1D626007673D8;
+			remoteInfo = CCLKLineChartViewDemo;
+		};
+		DFFE648A1DC1D627007673D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFFE645D1DC1D626007673D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFFE64641DC1D626007673D8;
+			remoteInfo = CCLKLineChartViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFFE64651DC1D626007673D8 /* CCLKLineChartViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCLKLineChartViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFE64691DC1D626007673D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFFE646B1DC1D626007673D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DFFE646C1DC1D626007673D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFFE646E1DC1D626007673D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DFFE646F1DC1D626007673D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DFFE64721DC1D626007673D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFFE64741DC1D626007673D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFFE64771DC1D626007673D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFFE64791DC1D626007673D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFE647E1DC1D627007673D8 /* CCLKLineChartViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCLKLineChartViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFE64821DC1D627007673D8 /* CCLKLineChartViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCLKLineChartViewDemoTests.m; sourceTree = "<group>"; };
+		DFFE64841DC1D627007673D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFE64891DC1D627007673D8 /* CCLKLineChartViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCLKLineChartViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFE648D1DC1D627007673D8 /* CCLKLineChartViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCLKLineChartViewDemoUITests.m; sourceTree = "<group>"; };
+		DFFE648F1DC1D627007673D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFE64ED1DC1E822007673D8 /* CCLKLineAboveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLKLineAboveCell.h; sourceTree = "<group>"; };
+		DFFE64EE1DC1E822007673D8 /* CCLKLineAboveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLKLineAboveCell.m; sourceTree = "<group>"; };
+		DFFE64EF1DC1E822007673D8 /* CCLKLineAboveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLKLineAboveView.h; sourceTree = "<group>"; };
+		DFFE64F01DC1E822007673D8 /* CCLKLineAboveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLKLineAboveView.m; sourceTree = "<group>"; };
+		DFFE64F11DC1E822007673D8 /* CCLKLineBelowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLKLineBelowCell.h; sourceTree = "<group>"; };
+		DFFE64F21DC1E822007673D8 /* CCLKLineBelowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLKLineBelowCell.m; sourceTree = "<group>"; };
+		DFFE64F31DC1E822007673D8 /* CCLKLineBelowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLKLineBelowView.h; sourceTree = "<group>"; };
+		DFFE64F41DC1E822007673D8 /* CCLKLineBelowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLKLineBelowView.m; sourceTree = "<group>"; };
+		DFFE64F51DC1E822007673D8 /* CCLKLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLKLineChartView.h; sourceTree = "<group>"; };
+		DFFE64F61DC1E822007673D8 /* CCLKLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLKLineChartView.m; sourceTree = "<group>"; };
+		DFFE64F71DC1E822007673D8 /* CCLKLineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLKLineData.h; sourceTree = "<group>"; };
+		DFFE64F81DC1E822007673D8 /* CCLKLineData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLKLineData.m; sourceTree = "<group>"; };
+		DFFE64F91DC1E822007673D8 /* CCLKLineShareData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLKLineShareData.h; sourceTree = "<group>"; };
+		DFFE64FA1DC1E822007673D8 /* CCLKLineShareData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLKLineShareData.m; sourceTree = "<group>"; };
+		DFFE65031DC1E8AA007673D8 /* CCLTimeAboveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLTimeAboveView.h; sourceTree = "<group>"; };
+		DFFE65041DC1E8AA007673D8 /* CCLTimeAboveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLTimeAboveView.m; sourceTree = "<group>"; };
+		DFFE65051DC1E8AA007673D8 /* CCLTimeBelowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLTimeBelowView.h; sourceTree = "<group>"; };
+		DFFE65061DC1E8AA007673D8 /* CCLTimeBelowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLTimeBelowView.m; sourceTree = "<group>"; };
+		DFFE65071DC1E8AA007673D8 /* CCLTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLTimeModel.h; sourceTree = "<group>"; };
+		DFFE65081DC1E8AA007673D8 /* CCLTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLTimeModel.m; sourceTree = "<group>"; };
+		DFFE65091DC1E8AA007673D8 /* CCLTimeShareData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLTimeShareData.h; sourceTree = "<group>"; };
+		DFFE650A1DC1E8AA007673D8 /* CCLTimeShareData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLTimeShareData.m; sourceTree = "<group>"; };
+		DFFE650B1DC1E8AA007673D8 /* CCLTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLTimeView.h; sourceTree = "<group>"; };
+		DFFE650C1DC1E8AA007673D8 /* CCLTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLTimeView.m; sourceTree = "<group>"; };
+		DFFE65131DC1E8AF007673D8 /* CCLFrameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLFrameTool.h; sourceTree = "<group>"; };
+		DFFE65141DC1E8AF007673D8 /* CCLFrameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLFrameTool.m; sourceTree = "<group>"; };
+		DFFE65161DC1E939007673D8 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		DFFE65171DC1E939007673D8 /* stockData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stockData.plist; sourceTree = "<group>"; };
+		DFFE65181DC1E939007673D8 /* timeData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = timeData.plist; sourceTree = "<group>"; };
+		DFFE65461DC1E9B1007673D8 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		DFFE65471DC1E9B1007673D8 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		DFFE65481DC1E9B1007673D8 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		DFFE65491DC1E9B1007673D8 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		DFFE654A1DC1E9B1007673D8 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		DFFE654B1DC1E9B1007673D8 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		DFFE654C1DC1E9B1007673D8 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		DFFE654D1DC1E9B1007673D8 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		DFFE654E1DC1E9B1007673D8 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		DFFE654F1DC1E9B1007673D8 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		DFFE65501DC1E9B1007673D8 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		DFFE65511DC1E9B1007673D8 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		DFFE65521DC1E9B1007673D8 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		DFFE65531DC1E9B1007673D8 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		DFFE65541DC1E9B1007673D8 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		DFFE65551DC1E9B1007673D8 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		DFFE65561DC1E9B1007673D8 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		DFFE65571DC1E9B1007673D8 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		DFFE65581DC1E9B1007673D8 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		DFFE65591DC1E9B1007673D8 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		DFFE655A1DC1E9B1007673D8 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFFE64621DC1D626007673D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFE647B1DC1D627007673D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFE64861DC1D627007673D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFFE645C1DC1D626007673D8 = {
+			isa = PBXGroup;
+			children = (
+				DFFE64671DC1D626007673D8 /* CCLKLineChartViewDemo */,
+				DFFE64811DC1D627007673D8 /* CCLKLineChartViewDemoTests */,
+				DFFE648C1DC1D627007673D8 /* CCLKLineChartViewDemoUITests */,
+				DFFE64661DC1D626007673D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFFE64661DC1D626007673D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE64651DC1D626007673D8 /* CCLKLineChartViewDemo.app */,
+				DFFE647E1DC1D627007673D8 /* CCLKLineChartViewDemoTests.xctest */,
+				DFFE64891DC1D627007673D8 /* CCLKLineChartViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFFE64671DC1D626007673D8 /* CCLKLineChartViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE65451DC1E9B1007673D8 /* MJExtension */,
+				DFFE65121DC1E8AF007673D8 /* Tool */,
+				DFFE65021DC1E8AA007673D8 /* timeChart */,
+				DFFE64EC1DC1E822007673D8 /* kLineChart */,
+				DFFE646B1DC1D626007673D8 /* AppDelegate.h */,
+				DFFE646C1DC1D626007673D8 /* AppDelegate.m */,
+				DFFE646E1DC1D626007673D8 /* ViewController.h */,
+				DFFE646F1DC1D626007673D8 /* ViewController.m */,
+				DFFE64711DC1D626007673D8 /* Main.storyboard */,
+				DFFE64741DC1D626007673D8 /* Assets.xcassets */,
+				DFFE64761DC1D626007673D8 /* LaunchScreen.storyboard */,
+				DFFE64791DC1D626007673D8 /* Info.plist */,
+				DFFE65161DC1E939007673D8 /* data.plist */,
+				DFFE65171DC1E939007673D8 /* stockData.plist */,
+				DFFE65181DC1E939007673D8 /* timeData.plist */,
+				DFFE64681DC1D626007673D8 /* Supporting Files */,
+			);
+			path = CCLKLineChartViewDemo;
+			sourceTree = "<group>";
+		};
+		DFFE64681DC1D626007673D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE64691DC1D626007673D8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFFE64811DC1D627007673D8 /* CCLKLineChartViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE64821DC1D627007673D8 /* CCLKLineChartViewDemoTests.m */,
+				DFFE64841DC1D627007673D8 /* Info.plist */,
+			);
+			path = CCLKLineChartViewDemoTests;
+			sourceTree = "<group>";
+		};
+		DFFE648C1DC1D627007673D8 /* CCLKLineChartViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE648D1DC1D627007673D8 /* CCLKLineChartViewDemoUITests.m */,
+				DFFE648F1DC1D627007673D8 /* Info.plist */,
+			);
+			path = CCLKLineChartViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		DFFE64EC1DC1E822007673D8 /* kLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE64ED1DC1E822007673D8 /* CCLKLineAboveCell.h */,
+				DFFE64EE1DC1E822007673D8 /* CCLKLineAboveCell.m */,
+				DFFE64EF1DC1E822007673D8 /* CCLKLineAboveView.h */,
+				DFFE64F01DC1E822007673D8 /* CCLKLineAboveView.m */,
+				DFFE64F11DC1E822007673D8 /* CCLKLineBelowCell.h */,
+				DFFE64F21DC1E822007673D8 /* CCLKLineBelowCell.m */,
+				DFFE64F31DC1E822007673D8 /* CCLKLineBelowView.h */,
+				DFFE64F41DC1E822007673D8 /* CCLKLineBelowView.m */,
+				DFFE64F51DC1E822007673D8 /* CCLKLineChartView.h */,
+				DFFE64F61DC1E822007673D8 /* CCLKLineChartView.m */,
+				DFFE64F71DC1E822007673D8 /* CCLKLineData.h */,
+				DFFE64F81DC1E822007673D8 /* CCLKLineData.m */,
+				DFFE64F91DC1E822007673D8 /* CCLKLineShareData.h */,
+				DFFE64FA1DC1E822007673D8 /* CCLKLineShareData.m */,
+			);
+			name = kLineChart;
+			path = ../../CCLKLineChartView/kLineChart;
+			sourceTree = "<group>";
+		};
+		DFFE65021DC1E8AA007673D8 /* timeChart */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE65031DC1E8AA007673D8 /* CCLTimeAboveView.h */,
+				DFFE65041DC1E8AA007673D8 /* CCLTimeAboveView.m */,
+				DFFE65051DC1E8AA007673D8 /* CCLTimeBelowView.h */,
+				DFFE65061DC1E8AA007673D8 /* CCLTimeBelowView.m */,
+				DFFE65071DC1E8AA007673D8 /* CCLTimeModel.h */,
+				DFFE65081DC1E8AA007673D8 /* CCLTimeModel.m */,
+				DFFE65091DC1E8AA007673D8 /* CCLTimeShareData.h */,
+				DFFE650A1DC1E8AA007673D8 /* CCLTimeShareData.m */,
+				DFFE650B1DC1E8AA007673D8 /* CCLTimeView.h */,
+				DFFE650C1DC1E8AA007673D8 /* CCLTimeView.m */,
+			);
+			name = timeChart;
+			path = ../../CCLKLineChartView/timeChart;
+			sourceTree = "<group>";
+		};
+		DFFE65121DC1E8AF007673D8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE65131DC1E8AF007673D8 /* CCLFrameTool.h */,
+				DFFE65141DC1E8AF007673D8 /* CCLFrameTool.m */,
+			);
+			name = Tool;
+			path = ../../CCLKLineChartView/Tool;
+			sourceTree = "<group>";
+		};
+		DFFE65451DC1E9B1007673D8 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE65461DC1E9B1007673D8 /* MJExtension.h */,
+				DFFE65471DC1E9B1007673D8 /* MJExtensionConst.h */,
+				DFFE65481DC1E9B1007673D8 /* MJExtensionConst.m */,
+				DFFE65491DC1E9B1007673D8 /* MJFoundation.h */,
+				DFFE654A1DC1E9B1007673D8 /* MJFoundation.m */,
+				DFFE654B1DC1E9B1007673D8 /* MJProperty.h */,
+				DFFE654C1DC1E9B1007673D8 /* MJProperty.m */,
+				DFFE654D1DC1E9B1007673D8 /* MJPropertyKey.h */,
+				DFFE654E1DC1E9B1007673D8 /* MJPropertyKey.m */,
+				DFFE654F1DC1E9B1007673D8 /* MJPropertyType.h */,
+				DFFE65501DC1E9B1007673D8 /* MJPropertyType.m */,
+				DFFE65511DC1E9B1007673D8 /* NSObject+MJClass.h */,
+				DFFE65521DC1E9B1007673D8 /* NSObject+MJClass.m */,
+				DFFE65531DC1E9B1007673D8 /* NSObject+MJCoding.h */,
+				DFFE65541DC1E9B1007673D8 /* NSObject+MJCoding.m */,
+				DFFE65551DC1E9B1007673D8 /* NSObject+MJKeyValue.h */,
+				DFFE65561DC1E9B1007673D8 /* NSObject+MJKeyValue.m */,
+				DFFE65571DC1E9B1007673D8 /* NSObject+MJProperty.h */,
+				DFFE65581DC1E9B1007673D8 /* NSObject+MJProperty.m */,
+				DFFE65591DC1E9B1007673D8 /* NSString+MJExtension.h */,
+				DFFE655A1DC1E9B1007673D8 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFFE64641DC1D626007673D8 /* CCLKLineChartViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFE64921DC1D627007673D8 /* Build configuration list for PBXNativeTarget "CCLKLineChartViewDemo" */;
+			buildPhases = (
+				DFFE64611DC1D626007673D8 /* Sources */,
+				DFFE64621DC1D626007673D8 /* Frameworks */,
+				DFFE64631DC1D626007673D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCLKLineChartViewDemo;
+			productName = CCLKLineChartViewDemo;
+			productReference = DFFE64651DC1D626007673D8 /* CCLKLineChartViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFFE647D1DC1D627007673D8 /* CCLKLineChartViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFE64951DC1D627007673D8 /* Build configuration list for PBXNativeTarget "CCLKLineChartViewDemoTests" */;
+			buildPhases = (
+				DFFE647A1DC1D627007673D8 /* Sources */,
+				DFFE647B1DC1D627007673D8 /* Frameworks */,
+				DFFE647C1DC1D627007673D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFFE64801DC1D627007673D8 /* PBXTargetDependency */,
+			);
+			name = CCLKLineChartViewDemoTests;
+			productName = CCLKLineChartViewDemoTests;
+			productReference = DFFE647E1DC1D627007673D8 /* CCLKLineChartViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFFE64881DC1D627007673D8 /* CCLKLineChartViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFE64981DC1D627007673D8 /* Build configuration list for PBXNativeTarget "CCLKLineChartViewDemoUITests" */;
+			buildPhases = (
+				DFFE64851DC1D627007673D8 /* Sources */,
+				DFFE64861DC1D627007673D8 /* Frameworks */,
+				DFFE64871DC1D627007673D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFFE648B1DC1D627007673D8 /* PBXTargetDependency */,
+			);
+			name = CCLKLineChartViewDemoUITests;
+			productName = CCLKLineChartViewDemoUITests;
+			productReference = DFFE64891DC1D627007673D8 /* CCLKLineChartViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFFE645D1DC1D626007673D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "来一碗鸭汤";
+				TargetAttributes = {
+					DFFE64641DC1D626007673D8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6N7A3HS86S;
+						ProvisioningStyle = Automatic;
+					};
+					DFFE647D1DC1D627007673D8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6N7A3HS86S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFFE64641DC1D626007673D8;
+					};
+					DFFE64881DC1D627007673D8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6N7A3HS86S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFFE64641DC1D626007673D8;
+					};
+				};
+			};
+			buildConfigurationList = DFFE64601DC1D626007673D8 /* Build configuration list for PBXProject "CCLKLineChartViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFFE645C1DC1D626007673D8;
+			productRefGroup = DFFE64661DC1D626007673D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFFE64641DC1D626007673D8 /* CCLKLineChartViewDemo */,
+				DFFE647D1DC1D627007673D8 /* CCLKLineChartViewDemoTests */,
+				DFFE64881DC1D627007673D8 /* CCLKLineChartViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFFE64631DC1D626007673D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFE64781DC1D626007673D8 /* LaunchScreen.storyboard in Resources */,
+				DFFE651A1DC1E939007673D8 /* stockData.plist in Resources */,
+				DFFE64751DC1D626007673D8 /* Assets.xcassets in Resources */,
+				DFFE65191DC1E939007673D8 /* data.plist in Resources */,
+				DFFE64731DC1D626007673D8 /* Main.storyboard in Resources */,
+				DFFE651B1DC1E939007673D8 /* timeData.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFE647C1DC1D627007673D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFE64871DC1D627007673D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFFE64611DC1D626007673D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFE65011DC1E822007673D8 /* CCLKLineShareData.m in Sources */,
+				DFFE655D1DC1E9B1007673D8 /* MJProperty.m in Sources */,
+				DFFE65101DC1E8AA007673D8 /* CCLTimeShareData.m in Sources */,
+				DFFE655B1DC1E9B1007673D8 /* MJExtensionConst.m in Sources */,
+				DFFE655C1DC1E9B1007673D8 /* MJFoundation.m in Sources */,
+				DFFE64FF1DC1E822007673D8 /* CCLKLineChartView.m in Sources */,
+				DFFE65641DC1E9B1007673D8 /* NSString+MJExtension.m in Sources */,
+				DFFE650E1DC1E8AA007673D8 /* CCLTimeBelowView.m in Sources */,
+				DFFE655E1DC1E9B1007673D8 /* MJPropertyKey.m in Sources */,
+				DFFE65151DC1E8AF007673D8 /* CCLFrameTool.m in Sources */,
+				DFFE64FB1DC1E822007673D8 /* CCLKLineAboveCell.m in Sources */,
+				DFFE64FC1DC1E822007673D8 /* CCLKLineAboveView.m in Sources */,
+				DFFE64FD1DC1E822007673D8 /* CCLKLineBelowCell.m in Sources */,
+				DFFE65631DC1E9B1007673D8 /* NSObject+MJProperty.m in Sources */,
+				DFFE655F1DC1E9B1007673D8 /* MJPropertyType.m in Sources */,
+				DFFE64701DC1D626007673D8 /* ViewController.m in Sources */,
+				DFFE646D1DC1D626007673D8 /* AppDelegate.m in Sources */,
+				DFFE65001DC1E822007673D8 /* CCLKLineData.m in Sources */,
+				DFFE65621DC1E9B1007673D8 /* NSObject+MJKeyValue.m in Sources */,
+				DFFE650F1DC1E8AA007673D8 /* CCLTimeModel.m in Sources */,
+				DFFE65601DC1E9B1007673D8 /* NSObject+MJClass.m in Sources */,
+				DFFE65611DC1E9B1007673D8 /* NSObject+MJCoding.m in Sources */,
+				DFFE646A1DC1D626007673D8 /* main.m in Sources */,
+				DFFE650D1DC1E8AA007673D8 /* CCLTimeAboveView.m in Sources */,
+				DFFE64FE1DC1E822007673D8 /* CCLKLineBelowView.m in Sources */,
+				DFFE65111DC1E8AA007673D8 /* CCLTimeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFE647A1DC1D627007673D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFE64831DC1D627007673D8 /* CCLKLineChartViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFE64851DC1D627007673D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFE648E1DC1D627007673D8 /* CCLKLineChartViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFFE64801DC1D627007673D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFFE64641DC1D626007673D8 /* CCLKLineChartViewDemo */;
+			targetProxy = DFFE647F1DC1D627007673D8 /* PBXContainerItemProxy */;
+		};
+		DFFE648B1DC1D627007673D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFFE64641DC1D626007673D8 /* CCLKLineChartViewDemo */;
+			targetProxy = DFFE648A1DC1D627007673D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFFE64711DC1D626007673D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFFE64721DC1D626007673D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFFE64761DC1D626007673D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFFE64771DC1D626007673D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFFE64901DC1D627007673D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFFE64911DC1D627007673D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFFE64931DC1D627007673D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6N7A3HS86S;
+				INFOPLIST_FILE = CCLKLineChartViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cclion.CCLKLineChartViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DFFE64941DC1D627007673D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6N7A3HS86S;
+				INFOPLIST_FILE = CCLKLineChartViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cclion.CCLKLineChartViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DFFE64961DC1D627007673D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6N7A3HS86S;
+				INFOPLIST_FILE = CCLKLineChartViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cclion.CCLKLineChartViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCLKLineChartViewDemo.app/CCLKLineChartViewDemo";
+			};
+			name = Debug;
+		};
+		DFFE64971DC1D627007673D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6N7A3HS86S;
+				INFOPLIST_FILE = CCLKLineChartViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cclion.CCLKLineChartViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCLKLineChartViewDemo.app/CCLKLineChartViewDemo";
+			};
+			name = Release;
+		};
+		DFFE64991DC1D627007673D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6N7A3HS86S;
+				INFOPLIST_FILE = CCLKLineChartViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cclion.CCLKLineChartViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CCLKLineChartViewDemo;
+			};
+			name = Debug;
+		};
+		DFFE649A1DC1D627007673D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6N7A3HS86S;
+				INFOPLIST_FILE = CCLKLineChartViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cclion.CCLKLineChartViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CCLKLineChartViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFFE64601DC1D626007673D8 /* Build configuration list for PBXProject "CCLKLineChartViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFE64901DC1D627007673D8 /* Debug */,
+				DFFE64911DC1D627007673D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFE64921DC1D627007673D8 /* Build configuration list for PBXNativeTarget "CCLKLineChartViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFE64931DC1D627007673D8 /* Debug */,
+				DFFE64941DC1D627007673D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DFFE64951DC1D627007673D8 /* Build configuration list for PBXNativeTarget "CCLKLineChartViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFE64961DC1D627007673D8 /* Debug */,
+				DFFE64971DC1D627007673D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DFFE64981DC1D627007673D8 /* Build configuration list for PBXNativeTarget "CCLKLineChartViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFE64991DC1D627007673D8 /* Debug */,
+				DFFE649A1DC1D627007673D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFFE645D1DC1D626007673D8 /* Project object */;
+}
