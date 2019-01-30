@@ -1,11 +1,21 @@
->标准对标雪球APPK线。
+### 介绍：
+- 这是以`雪球APP`为原型，基于 `Objective-C`的K线开源项目。
+- 该项目整体设计思路已经经过某成熟证券APP的商业认证。
+- 本项目将K线业务代码尽可能缩减，保留核心功能，可流畅、高效实现手势交互。
+- K线难点在于手势交互和数据动态刷新上，功能并不复杂，关键在于设计思路。
 
-Z君这几天会将之前写的K线框架review，同时在简书也会将之前搭建K线遇到的问题，发出来，供大家参考，大家有什么疑问，可以直接留言，Z君每天都会给大家解答。
-(授人予鱼不如渔 如果是公司的项目 建议大家参考思路 自己摸索写 不要用开源项目 自己写的代码应对公司的需求迭代才会轻松自如)
 
+### 建议：
+
+- 如果搭建K线为公司业务，不建议采用集成度高的开源代码。庞大臃肿，纵然短期匆忙上线，难以应付后期灵活需求变更。
+
+
+`Swift`版请移步 https://github.com/cclion/KLineView 。
+
+### 设计思路&&难点：
  K线难点在于手势的处理上，`捏合、长按、拖拽`都需要展示不同效果。以下是Z君当时做K线时遇到的问题的解决方案；
  
-###  1.  捏合手势需要动态改变K线柱的宽度，对应的增加或减少当前界面K线柱的展示数量。
+####  1.  捏合手势需要动态改变K线柱的宽度，对应的增加或减少当前界面K线柱的展示数量。
 
 采用`UITableView`类实现，将K线柱封装在`cell`中，在`tableview`中监听捏合手势，对应改变`cell`的高度，同时刷新`cell`中K线柱的布局来实现动态改变K线柱的宽度。
 
@@ -15,13 +25,13 @@ Z君这几天会将之前写的K线框架review，同时在简书也会将之前
 ![tableView旋转90°](https://upload-images.jianshu.io/upload_images/3425250-2b92b7cce0268ee2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-###  2.  K线柱绘制
+####  2.  K线柱绘制
 K线柱采用`CAShapeLayer`配合`UIBezierPath`绘制，内存低，效率高，棒棒哒！
 
 关于CAShapeLayer的使用大家可以看这篇    https://zsisme.gitbooks.io/ios-/content/chapter6/cashapelayer.html
 （现在的google、baidu，好文章都搜不到，一搜全是简单调用两个方法就发的博客，还是翻了两年前的收藏才找到这个网站，强烈推荐大家）
 
-###  3.  捏合时保证捏合中心点不变，两边以捏合中间点为中心进行收缩或扩散
+####  3.  捏合时保证捏合中心点不变，两边以捏合中间点为中心进行收缩或扩散
 
 因为`UITableView`在改变`cell`的高度时，默认时不会改变偏移量，所以不能保证捏合的中心点不变，这里我们的小学知识就会用上了。
 ![捏合时状态.png](https://upload-images.jianshu.io/upload_images/3425250-dc74b97e9cc67fc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -32,7 +42,7 @@ K线柱采用`CAShapeLayer`配合`UIBezierPath`绘制，内存低，效率高，
 保证捏合中心点的中K线柱的中心点还在捏合前，就需要`c1 = c2` ，计算出`O2`，在捏合完，设置偏移量为`O2`即可。
 ![计算偏移量.png](https://upload-images.jianshu.io/upload_images/3425250-1e56905ede398f14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###  4.  K线其他线性指标如何绘制
+####  4.  K线其他线性指标如何绘制
 
 在K线中除了K线柱之外，还有其他`均线指标`，连贯整个数据显示区。
 ![线性指标](https://upload-images.jianshu.io/upload_images/3425250-fd6d12d2c69a2dbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
