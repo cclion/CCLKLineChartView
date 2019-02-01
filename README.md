@@ -24,7 +24,6 @@
 注意：因为`UITableView`默认是上下滑动，而K线柱是左右滑动，Z君这里将`UITableView`做了一个顺时针90°的旋转。 
 ![tableView旋转90°](https://upload-images.jianshu.io/upload_images/3425250-2b92b7cce0268ee2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
 ####  2.  K线柱绘制
 K线柱采用`CAShapeLayer`配合`UIBezierPath`绘制，内存低，效率高，棒棒哒！
 
